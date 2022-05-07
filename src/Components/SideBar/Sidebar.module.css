@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebarBox {
+  /* border: 1px solid red; */
+  width: 18%;
+  height: 100vh;
+  overflow-y: scroll;
+  position: fixed;
+  left: 0;
+  background-color: #fff;
+  z-index: 111;
+}
+.imgBox {
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+.homeBox {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.homeBox div {
+  width: 30px;
+  margin: 0 5px;
+}
+
+.sideMainBOx {
+  /* border: 1px solid; */
+  padding: 8px;
+  margin-left: 18%;
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 400px;
+}
+.sideBox {
+  /* border: ; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.navImgBox {
+  width: 50px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.inpBox {
+  /* border: 1px solid; */
+  width: 250px;
+  margin: 0 10px;
+  /* align-items: center; */
+  position: relative;
+}
+
+.inpBox input {
+  /* margin-top: 10px; */
+  padding: 10px;
+  width: 100%;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  /* padding-left: 10px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* .inpBox input::placeholder{
+    margin-left: 10px;
+} */
+.srchIcon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.forColor {
+  background-color: #f5f6fb;
+}
+@media only screen and (max-width: 800px) {
+  .sidebarBox p {
+    /* border: 1px solid; */
+    display: none;
+  }
+  .imgBox {
+    width: 50px;
+  }
+
+  .homeBox div {
+    margin: 10px auto;
+
+    /* border: 1px solid red; */
+  }
+}
+@media only screen and (max-width: 650px) {
+  .nav,
+  .sideBox {
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+    margin: 10px 0;
+  }
+}
