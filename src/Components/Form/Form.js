@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "../Navbar/NavBar";
 import style from "./Form.module.css";
 import SideLog from "../../Assets/sideLogo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 const Form = () => {
+  let [name, setName] = useState("");
+let [password, setPassword] = useState("");
+  let navigator = useNavigate();
+
+  const sumbitForm = () => {
+    if (name == "admin" && password == "admin") {
+      navigator("/dashboard")
+      name = "";
+      password = "";
+    } else if (name == "" || password == "") {
+      alert("Your field is empty");
+    } else {
+      alert("Invalid password or email");
+    }
+  };
+
   return (
     <div className={style.mainBox}>
       <NavBar />
@@ -23,14 +40,26 @@ const Form = () => {
           <p>Sign in width credentials</p>
 
           <section>
-            <input type="email" />
+            <input
+              type="text"
+              placeholder="Username"
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
+            />
             <br />
-            <input type="password" />
+            <input
+              type="password"
+              placeholder="Password"
+              onChange={(e) => {
+                setPassword(e.target.value);
+              }}
+            />
             <p>Remember Me</p>
           </section>
-          <Link to={"/dashborad"}>
-            <button>Sign In</button>
-          </Link>
+          {/* <Link to={"/dashborad"}> */}
+          <button onClick={sumbitForm}>Sign In</button>
+          {/* </Link> */}
         </div>
       </div>
     </div>

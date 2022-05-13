@@ -22,11 +22,10 @@ const NavBar = () => {
       </div>
       <div>
         <ul>
-          <Link to={'/dashborad'}>
-            <li>
-              <i className="fa-solid fa-face-smile" /> Dashborad
-            </li>
-          </Link>
+          <li>
+            <i className="fa-solid fa-face-smile" /> Dashborad
+          </li>
+
           <li>
             <i className="fa-solid fa-circle-user" style={user} />
             Register

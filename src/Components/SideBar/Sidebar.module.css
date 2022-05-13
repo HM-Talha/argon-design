@@ -13,6 +13,7 @@
   left: 0;
   background-color: #fff;
   z-index: 111;
+  padding-left: 10px;
 }
 .imgBox {
   width: 100px;

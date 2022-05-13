@@ -1,5 +1,5 @@
-*{
-    text-decoration: none;
+* {
+  text-decoration: none;
 }
 .mainBox {
   background: #f12711; /* fallback for old browsers */
@@ -31,7 +31,7 @@
   text-align: center;
 }
 .sideBox {
-  width: 40%;
+  width: 35%;
 }
 .imgAndForm {
   /* border: 1px solid white; */
@@ -95,19 +95,19 @@
   border: none;
   cursor: pointer;
 }
-@media only screen and (max-width: 700px){
-    .mainBox {
-        height: 180vh;
-    }
-    .imgAndForm{
-        flex-direction: column;
-        align-items: center;
-    }
-    .formBox{
-        width: 80%;
-        margin-top: 20px;
-    }
-    .sideBox{
-        width: 50%;
-    }
+@media only screen and (max-width: 700px) {
+  .mainBox {
+    height: 180vh;
+  }
+  .imgAndForm {
+    flex-direction: column;
+    align-items: center;
+  }
+  .formBox {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .sideBox {
+    width: 50%;
+  }
 }
